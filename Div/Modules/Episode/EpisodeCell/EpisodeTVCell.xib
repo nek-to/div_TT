@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Heavy.ttf">
+            <string>SFUIText-Heavy</string>
+        </array>
+        <array key="SFUIText-Medium.ttf">
+            <string>SFUIText-Medium</string>
+        </array>
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="episodeCell" rowHeight="115" id="KGk-i7-Jjw" customClass="EpisodeTVCell" customModule="Div" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-Nh-RAk">
+                        <rect key="frame" x="24" y="10" width="343" height="25.5"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz9-aD-94j">
+                        <rect key="frame" x="24" y="45.5" width="319" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldg-XQ-Dnr">
+                        <rect key="frame" x="24" y="77.5" width="228" height="17"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-RB-4Qv">
+                        <rect key="frame" x="267" y="49.5" width="100" height="45"/>
+                        <color key="backgroundColor" red="0.78095930810000003" green="0.98903578520000002" blue="0.72619640829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OeE-6g-gu0"/>
+                            <constraint firstAttribute="height" constant="45" id="aWe-Jp-Ccd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Heavy" family="SF UI Text" pointSize="21"/>
+                        <color key="tintColor" red="0.19032630319999999" green="0.62497544289999996" blue="0.085358880459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Link"/>
+                        <connections>
+                            <action selector="openEpisodeLink:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZbU-Fm-qYM"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PPT-Nh-RAk" firstAttribute="trailing" secondItem="TlB-RB-4Qv" secondAttribute="trailing" id="2gt-lJ-qbF"/>
+                    <constraint firstItem="PPT-Nh-RAk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7ym-hH-7UC"/>
+                    <constraint firstItem="PPT-Nh-RAk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="99V-PX-X7S"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fz9-aD-94j" secondAttribute="trailing" constant="24" id="CB6-aJ-udJ"/>
+                    <constraint firstItem="TlB-RB-4Qv" firstAttribute="leading" secondItem="Ldg-XQ-Dnr" secondAttribute="trailing" constant="15" id="JrG-3e-n2q"/>
+                    <constraint firstItem="Ldg-XQ-Dnr" firstAttribute="top" secondItem="Fz9-aD-94j" secondAttribute="bottom" constant="15" id="OFU-vY-FGf"/>
+                    <constraint firstItem="Fz9-aD-94j" firstAttribute="leading" secondItem="PPT-Nh-RAk" secondAttribute="leading" id="WDC-is-hMr"/>
+                    <constraint firstItem="TlB-RB-4Qv" firstAttribute="bottom" secondItem="Ldg-XQ-Dnr" secondAttribute="bottom" id="XVu-r4-fqH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TlB-RB-4Qv" secondAttribute="trailing" id="ana-8g-wlH"/>
+                    <constraint firstItem="Fz9-aD-94j" firstAttribute="top" secondItem="PPT-Nh-RAk" secondAttribute="bottom" constant="10" id="hRz-Zw-uo8"/>
+                    <constraint firstItem="Ldg-XQ-Dnr" firstAttribute="leading" secondItem="PPT-Nh-RAk" secondAttribute="leading" id="kGR-uK-3MF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="airDateLabel" destination="Fz9-aD-94j" id="2KX-QT-gkF"/>
+                <outlet property="episodeLabel" destination="Ldg-XQ-Dnr" id="2cy-zY-yj2"/>
+                <outlet property="linkButton" destination="TlB-RB-4Qv" id="FCD-pj-MJl"/>
+                <outlet property="nameLabel" destination="PPT-Nh-RAk" id="Di2-qD-yWn"/>
+            </connections>
+            <point key="canvasLocation" x="186.23188405797103" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+</document>
